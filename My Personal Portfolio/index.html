@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my personal portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b5031eacb7.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+         <nav >
+            <img src="logo.png" class="logo">
+            <ul id="sidemenu">
+                 <li><a href="#header">Home</a></li> 
+                 <li><a href="#About">About</a></li>  
+                 <li><a href="#services">Services</a></li> 
+                 <li><a href="#portfolio">Portfolio</a></li> 
+                 <li><a href="#contact">Contact</a></li>
+                 <i class="fa-regular fa-circle-xmark" id="menu" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" id="menu" onclick="openmenu()"></i>
+        </nav>
+        <div class="head1">
+            <p>Web Designer</p>
+           <h1> Hi , I'm  <span> Nishanth </span> From Dharmapuri</h1>
+        </div>
+        </div>
+    </div>
+    <!-- ---------------- about------------------------------------- -->
+    <div id="About">
+        <div class="container1">
+            <div class="row">
+             <div class="aboutcolom1">
+                <img src="about copy.jpeg"  id="img"alt="">
+
+             </div>
+              <div class="aboutcolom2">
+                <h1 class="abouttitle">About Me</h1>
+                <p class="paragraph"> <span> Beginer </span> Passionate web Designer imagination crafting  visually <br>
+                    stunning and user frindly wesites. proficient in html, css , java script   and<br>
+                    responce web site Design principlecommitted to staying upadtess <br>
+                     with the latest trents and technologies in web development<br>
+                    </p>
+                     <div class="tab-titles">
+                        <p class="tab-link act-link" onclick="opentab('myskills')">Skills</p>
+                        <p class="tab-link" onclick="opentab('myeducation')">Education </p>
+                    </div>
+              <div class="tab-contents act-tap"id="myskills">
+                <ul>
+                    <li><span>Web Designer</span><br> Web/App interface</li>
+                    <li><span>Web Development</span><br> web App Development</li>
+                    
+                </ul>
+              </div> 
+              <div class="tab-contents"id="myeducation">
+                <ul>
+                    <li><span>2023</span><br>B.SC from SVC Dharmapuri</li>
+                    <li><span>2025</span><br> MCA from Paavai Namakkal</li>
+                    
+                </ul>
+              </div> 
+            </div>    
+
+        </div>
+           
+    </div>
+</div>
+<!-- -------------services---------------------------- --->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title"> My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Desigine</h2>
+                <p>Web design encompasses many difference skills and 
+                deciplines in the production and maintance of web sit</p>
+                <a href="#">learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>Frent End</h2>
+                <p> The process of building component that 
+                    iterative with user inter face services</p>
+                <a href="#">learn More</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-webflow"></i>
+                <h2>Web Development</h2>
+                <p> Refer to creating.building,and maintance of 
+                    web site,web programming</p>
+                <a href="#">learn More</a>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+<!-- ------------------------myprotfolio---------- -->
+<div id="portfolio">
+    <div class="container">
+        <div class="sub-title"> My Works</div>
+        <div class="work-list">
+            <div class="work">
+                <img class="img" src="bg01.jpg" alt="">
+                <div class="layer">
+                    <h3>Social Media</h3>
+                    <p>The web connects your talented <br>
+                         pepople around the world</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+
+            </div>
+            <div class="work">
+                <img class="img" src="bg02.jpg" alt="">
+                <div class="layer">
+                    <h3>Online Shopping Laptop</h3>
+                    <p>The web connects your talented <br>
+                         pepople around the world</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+
+            </div>
+            <div class="work">
+                <img class="img" src="bg03.jpg" alt="">
+                <div class="layer">
+                <h3>Game Website</h3>
+                    <p> The web connects your talented <br>
+                        pepople around the world</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+
+            </div>
+
+        </div>
+        <a href="#" class="btn">See More</a>
+
+    </div>
+</div>
+<!-- --------------------mycontact------------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+               <h1 class="sub-title"> Contact Me</h1>
+               <p> <i class="fa-solid fa-paper-plane"></i>nishanthmass197@gmail.com</p>
+               <p><i class="fa-solid fa-phone"></i>9655039851</p>
+               <div class="social-icons">
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+
+               </div>
+               <a href="Resume-1.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+               <form  name="submit-to-google-sheet">
+                <input type="text" name="Name"placeholder="Your Name" required>
+                <input type="email" name="Email"placeholder="Your Email" required>
+                <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+
+
+               </form>
+               <span id="msg"></span>
+
+            </div>
+
+        </div>
+    </div>
+    <div class="copyright">
+        <p> Copyright Nishanth <i class="fa-solid fa-copyright"></i>  Made with own learning</p>
+    </div>
+</div>
+<script>
+    
+    var tablinks = document.getElementsByClassName("tab-link");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("act-link");
+              
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("act-tap");
+       }
+       event.currentTarget.classList.add("act-link");
+       document.getElementById(tabname).classList.add("act-tap");
+    }
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+
+    
+
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzLFxhpfhuoC-C5oU-BYBNdv8cBDoKVPZm7ZMhtFgJLILsltVvdgGN-1Bxibs-hNFmp/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        }
+        )
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+    
+</body>
+</html>
